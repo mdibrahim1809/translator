@@ -267,13 +267,7 @@ languageSelect.addEventListener('change', function () {
 
 // Translation function with click counting
 translateButton.addEventListener('click', function () {
-    if (clickCount === 1) {
-        // Open the ad page in a new tab
-        window.open("https://youtube.com/@hacktrack_6244", "_blank"); // Replace with actual ad URL
-    } if (clickCount === 2) {
-        // Open the ad page in a new tab
-        window.open("https://instagram.com/hacktrack_6244", "_blank"); // Replace with actual ad URL
-    } else if (clickCount === 3) {
+
         const text = inputText.value;
         const targetLanguage = languageSelect.value;
 
@@ -295,11 +289,7 @@ translateButton.addEventListener('click', function () {
             });
 
         // Reset the count to 1 after the third click
-        clickCount = 1;
     } 
-
-    // Increment the click counter
-    clickCount++;
 });
 
 </script>
